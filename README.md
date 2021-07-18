@@ -1,2 +1,2 @@
 # FReMP
-Video manager Application
+python3 ./app.py
