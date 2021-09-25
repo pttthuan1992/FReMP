@@ -1,0 +1,81 @@
+.hidden {
+    display: none;
+}
+.text-right{
+    text-align: right;
+}
+/* Header */
+.header {
+    background-color: #1e3b49;
+    height: 80px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    color: white;
+    padding: 12px 80px;
+}
+.header-btn {
+    margin: 0 12px;
+    border: 1px solid !important;
+    border-color: #c5c5c5 !important;
+    color: #c5c5c5 !important;
+    -webkit-background-clip: text;
+    background-clip: text;
+    background: linear-gradient(to right, #ffffff26 , #ffffff26 50%, transparent 50%);
+    background-size: 200% 100%;
+    background-position: 100%;
+}
+.header-btn:hover{
+    transition: background-position 275ms ease;
+    background-color: #ffffff26;
+    background-position: 0 100%;
+}
+.logo {
+    height: 60px;
+    width: 60px;
+    margin: 0 0 8px 0;
+}
+.brand-name{
+    font-family: 'Grechen Fuemen', cursive;
+    font-size: 36px;
+}
+.user-avatar {
+    margin:4px;
+    cursor: pointer;
+}
+
+/* Main */
+.home main {
+    padding: 160px 80px;
+    text-align: center;
+}
+
+.main-introduce {
+    font: "Lucida Console", monospace;
+    font-weight: 600;
+    font-size: 40px;
+    color: #4a148c;
+}
+.main-upload-container {
+    width: 400px;
+    height: 280px;
+    border: #c5c5c5 dotted;
+    border-radius: 20px;
+    margin: auto;
+    position: relative;
+
+}
+.main-upload-container:hover {
+    cursor: pointer;
+}
+.main-upload-icon {
+    position: absolute;
+    font-size: 200px;
+    color: #868686;
+    transform: translateX(-50%) translateY(32px);
+}
+.review-files {
+    width: 400px;
+    margin: auto;
+    text-align: left;
+}

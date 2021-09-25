@@ -1,0 +1,22 @@
+.login {
+    padding: 20px 0;
+    height: 100vh;
+    background-color: #007bff;
+}
+.login-container {
+  margin: 0 auto;
+  padding: 40px;
+  width: 500px;
+  height: 360px;
+  background-color: whitesmoke;
+  border-radius: 12px;
+}
+.login-sign-in-btn{
+  width: 100%;
+  margin: 0 0 20px 0;
+}
+.login-alert-container{
+  margin: 20px auto;
+  width: 600px;
+  height: 160px;
+}
