@@ -1,5 +1,6 @@
 from db.mongodb import get_users_collection
 from datetime import datetime
+import re
 
 def create_user(data):
     users_collection = get_users_collection()
@@ -18,12 +19,24 @@ def get_users():
     )
 
 
-def get_usernames():
+def get_usernames(username):
+    users_collection = get_users_collection()
+    users = users_collection.find_one(
+        {'username': re.compile(username, re.IGNORECASE)}
+    )
+    print("/{}/i".format(username))
+    return True if users else False
+
+
+def verify_account(username, password):
     users_collection = get_users_collection()
     users = list(
-        users_collection.find({}, {"username": 1})
+        users_collection.find({
+            "username": username,
+            "password": password
+        })
     )
-    return [user.get("username") for user in users]
+    return True if users else False
 
 
 def update_user(username, data):

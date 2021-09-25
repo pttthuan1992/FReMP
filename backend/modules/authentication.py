@@ -20,3 +20,7 @@ def get_token_by_user(username):
     redis_db = get_redis_db()
     return redis_db.get(username)
 
+
+def get_user_by_token(token):
+    redis_db = get_redis_db()
+    return redis_db.get(username)
